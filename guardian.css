@@ -1,0 +1,227 @@
+.theme-guardian {
+    --primary-color: #004643;
+    --secondary-color: #ABD1C6;
+    --success-color: #2A9D8F;
+    --danger-color: #E76F51;
+    --warning-color: #F4A261;
+    --info-color: #457B9D;
+    --light-color: #F8F9FA;
+    --dark-color: #212529;
+    --high-contrast-bg: #FFFFFF;
+    --high-contrast-text: #000000;
+}
+
+.theme-guardian body {
+    font-size: 1.1rem;
+}
+
+.theme-guardian .navbar {
+    background-color: var(--primary-color);
+}
+
+.theme-guardian .navbar-brand {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.theme-guardian .nav-link {
+    color: var(--light-color);
+    font-size: 1.1rem;
+}
+
+.theme-guardian .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.theme-guardian .profile-btn {
+    color: var(--light-color);
+    font-size: 1.1rem;
+}
+
+.theme-guardian .profile-btn:hover {
+    color: var(--secondary-color);
+}
+
+.theme-guardian .profile-dropdown-content {
+    background-color: var(--primary-color);
+}
+
+.theme-guardian .profile-dropdown-content a {
+    color: var(--light-color);
+    font-size: 1.1rem;
+}
+
+.theme-guardian .dashboard-header {
+    background-color: var(--primary-color);
+}
+
+.theme-guardian .dashboard-title {
+    font-size: 2rem;
+}
+
+.theme-guardian .dashboard-subtitle {
+    font-size: 1.2rem;
+}
+
+.theme-guardian .summary-card,
+.theme-guardian .dashboard-card,
+.theme-guardian .auth-card {
+    background-color: var(--high-contrast-bg);
+    color: var(--high-contrast-text);
+    border: 2px solid var(--secondary-color);
+}
+
+.theme-guardian .summary-card.income .card-icon {
+    background-color: rgba(42, 157, 143, 0.2);
+    color: var(--success-color);
+}
+
+.theme-guardian .summary-card.expense .card-icon {
+    background-color: rgba(231, 111, 81, 0.2);
+    color: var(--danger-color);
+}
+
+.theme-guardian .summary-card.balance .card-icon {
+    background-color: rgba(0, 70, 67, 0.2);
+    color: var(--primary-color);
+}
+
+.theme-guardian .transaction-item.income .transaction-icon {
+    background-color: rgba(42, 157, 143, 0.2);
+    color: var(--success-color);
+}
+
+.theme-guardian .transaction-item.expense .transaction-icon {
+    background-color: rgba(231, 111, 81, 0.2);
+    color: var(--danger-color);
+}
+
+.theme-guardian .progress-fill {
+    background-color: var(--primary-color);
+}
+
+.theme-guardian .form-control {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border: 2px solid var(--secondary-color);
+}
+
+.theme-guardian .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 70, 67, 0.25);
+}
+
+.theme-guardian .btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.theme-guardian .badge-item {
+    background-color: rgba(171, 209, 198, 0.3);
+    border: 1px solid var(--secondary-color);
+}
+
+/* High contrast and accessibility features for Guardian theme */
+.theme-guardian .transaction-item {
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.theme-guardian .dashboard-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.theme-guardian .transaction-details h4 {
+    font-size: 1.2rem;
+}
+
+.theme-guardian .transaction-details p {
+    font-size: 1.1rem;
+}
+
+.theme-guardian .transaction-date {
+    font-size: 1rem;
+}
+
+.theme-guardian .card-value {
+    font-size: 1.8rem;
+}
+
+/* Simplified navigation for Guardian theme */
+.theme-guardian .profile-switcher {
+    margin-bottom: 3rem;
+}
+
+.theme-guardian .profile-option {
+    padding: 1.25rem;
+    margin: 0 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+.theme-guardian .profile-option i {
+    font-size: 2rem;
+}
+
+.theme-guardian .profile-option span {
+    font-size: 1.2rem;
+}
+
+/* Fraud alert styling */
+.theme-guardian .fraud-alert {
+    background-color: rgba(231, 111, 81, 0.2);
+    border: 2px solid var(--danger-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.theme-guardian .fraud-alert i {
+    font-size: 1.5rem;
+    color: var(--danger-color);
+    margin-right: 1rem;
+}
+
+.theme-guardian .fraud-alert h4 {
+    margin-bottom: 0.25rem;
+    color: var(--danger-color);
+}
+
+/* Voice command button styling */
+.theme-guardian .voice-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-guardian .voice-btn:hover {
+    background-color: var(--success-color);
+}
+
+/* Simplified layout for Guardian theme */
+.theme-guardian .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.theme-guardian .summary-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}

@@ -1,0 +1,155 @@
+.theme-pacer {
+    --primary-color: #6C5CE7;
+    --secondary-color: #A29BFE;
+    --success-color: #00B894;
+    --danger-color: #FF7675;
+    --warning-color: #FDCB6E;
+    --info-color: #74B9FF;
+    --light-color: #2D3436;
+    --dark-color: #D63031;
+    --white-color: #2D3436;
+    --background-color: #2D3436;
+    --card-background-color: #34495E;
+    --text-color: #FFFFFF;
+}
+
+.theme-pacer body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.theme-pacer .navbar {
+    background-color: var(--card-background-color);
+}
+
+.theme-pacer .navbar-brand {
+    color: var(--primary-color);
+}
+
+.theme-pacer .nav-link {
+    color: var(--text-color);
+}
+
+.theme-pacer .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.theme-pacer .profile-btn {
+    color: var(--text-color);
+}
+
+.theme-pacer .profile-btn:hover {
+    color: var(--primary-color);
+}
+
+.theme-pacer .profile-dropdown-content {
+    background-color: var(--card-background-color);
+}
+
+.theme-pacer .profile-dropdown-content a {
+    color: var(--text-color);
+}
+
+.theme-pacer .dashboard-header {
+    background-color: var(--primary-color);
+}
+
+.theme-pacer .summary-card,
+.theme-pacer .dashboard-card,
+.theme-pacer .auth-card {
+    background-color: var(--card-background-color);
+    color: var(--text-color);
+}
+
+.theme-pacer .summary-card.income .card-icon {
+    background-color: rgba(0, 184, 148, 0.2);
+    color: var(--success-color);
+}
+
+.theme-pacer .summary-card.expense .card-icon {
+    background-color: rgba(255, 118, 117, 0.2);
+    color: var(--danger-color);
+}
+
+.theme-pacer .summary-card.balance .card-icon {
+    background-color: rgba(108, 92, 231, 0.2);
+    color: var(--primary-color);
+}
+
+.theme-pacer .transaction-item.income .transaction-icon {
+    background-color: rgba(0, 184, 148, 0.2);
+    color: var(--success-color);
+}
+
+.theme-pacer .transaction-item.expense .transaction-icon {
+    background-color: rgba(255, 118, 117, 0.2);
+    color: var(--danger-color);
+}
+
+.theme-pacer .progress-fill {
+    background-color: var(--primary-color);
+}
+
+.theme-pacer .form-control {
+    background-color: var(--background-color);
+    border-color: var(--card-background-color);
+    color: var(--text-color);
+}
+
+.theme-pacer .form-control:focus {
+    background-color: var(--background-color);
+    border-color: var(--primary-color);
+}
+
+.theme-pacer .badge-item {
+    background-color: rgba(162, 155, 254, 0.2);
+}
+
+/* Streak animation for Pacer theme */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(108, 92, 231, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0);
+    }
+}
+
+.theme-pacer .profile-option.active {
+    animation: pulse 2s infinite;
+}
+
+/* Aesthetic charts for Pacer theme */
+.theme-pacer .dashboard-card h2 {
+    position: relative;
+    padding-left: 15px;
+}
+
+.theme-pacer .dashboard-card h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 25px;
+    width: 5px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Social integration styling */
+.theme-pacer .transaction-item {
+    position: relative;
+}
+
+.theme-pacer .transaction-item.expense::after {
+    content: '↗';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+    opacity: 0.7;
+}

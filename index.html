@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}OmniBudget - The All-Ages Expense Tracker{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h1>OmniBudget</h1>
+        <p class="tagline">The All-Ages Expense Tracker</p>
+        <p class="description">A financial application that grows with you through every stage of life.</p>
+        
+        <div class="cta-buttons">
+            <a href="{{ url_for('register') }}" class="btn btn-primary">Get Started</a>
+            <a href="{{ url_for('login') }}" class="btn btn-secondary">Login</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Designed for Every Stage of Life</h2>
+        
+        <div class="profiles-grid">
+            <div class="profile-card explorer">
+                <div class="profile-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3>The Explorer</h3>
+                <p class="age-range">Ages 6-12</p>
+                <p>Learn financial basics with gamified tools and a fun interface.</p>
+                <ul>
+                    <li>Earn pocket money</li>
+                    <li>Save in virtual piggy banks</li>
+                    <li>Track spending on toys and snacks</li>
+                </ul>
+            </div>
+            
+            <div class="profile-card pacer">
+                <div class="profile-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>The Pacer</h3>
+                <p class="age-range">Ages 13-22</p>
+                <p>Manage independence with social features and budgeting tools.</p>
+                <ul>
+                    <li>Track part-time income</li>
+                    <li>Split bills with friends</li>
+                    <li>Monitor subscriptions</li>
+                </ul>
+            </div>
+            
+            <div class="profile-card builder">
+                <div class="profile-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>The Builder</h3>
+                <p class="age-range">Ages 23-60</p>
+                <p>Build wealth with comprehensive financial management tools.</p>
+                <ul>
+                    <li>Track EMIs and investments</li>
+                    <li>Family budget syncing</li>
+                    <li>Tax planning tools</li>
+                </ul>
+            </div>
+            
+            <div class="profile-card guardian">
+                <div class="profile-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>The Guardian</h3>
+                <p class="age-range">Ages 60+</p>
+                <p>Manage fixed income with high accessibility and security features.</p>
+                <ul>
+                    <li>Track pension and FDs</li>
+                    <li>Log medical expenses</li>
+                    <li>Fraud alerts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="container">
+        <h2>Pricing Plans</h2>
+        
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <div class="price">₹0<span>/month</span></div>
+                <ul>
+                    <li>Basic tracking for all ages</li>
+                    <li>Up to 50 transactions per month</li>
+                    <li>Single profile</li>
+                </ul>
+                <a href="{{ url_for('register') }}" class="btn btn-outline">Get Started</a>
+            </div>
+            
+            <div class="pricing-card featured">
+                <div class="badge">Popular</div>
+                <h3>OmniFamily</h3>
+                <div class="price">₹199<span>/month</span></div>
+                <ul>
+                    <li>Everything in Free</li>
+                    <li>Family Sync for parents</li>
+                    <li>Unlimited transactions</li>
+                    <li>Multiple profiles</li>
+                    <li>Receipt scanning</li>
+                    <li>Bank statement import</li>
+                </ul>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
